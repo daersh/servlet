@@ -20,7 +20,7 @@ public class ServiceMethodTestServlet extends HttpServlet {
 
     @Override
     public void destroy() {
-        super.destroy();
+        super.destroy(); 
     }
 
     @Override
