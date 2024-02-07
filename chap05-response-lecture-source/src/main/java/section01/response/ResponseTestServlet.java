@@ -23,7 +23,7 @@ public class ResponseTestServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         StringBuilder responseBuilder = new StringBuilder();
-        responseBuilder.append("<!DOCTYPE html>\n")
+        responseBuilder.append("<!DOCTYPE html>\n")     //참고. 이렇게 작성하기 불편하여 jsp가 만들어짐
                 .append("<html>\n")
                 .append("<head>\n")
                 .append("</head>\n")
