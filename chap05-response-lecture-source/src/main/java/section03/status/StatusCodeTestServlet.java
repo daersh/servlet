@@ -12,7 +12,7 @@ import java.io.IOException;
 public class StatusCodeTestServlet extends HttpServlet {
     public StatusCodeTestServlet() {}
 
-    @Overrideㅌ
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //설명. 에러 상태, 메시지 전송
 //        resp.sendError(404,"없는 페이지입니다. 경로 확인해주세요");

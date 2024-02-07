@@ -26,7 +26,7 @@ public class RedirectServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //설명. 리다이렉트 이후 오는 서블릿은 기존과 다른 새로운 요청, 응답 객체로 온다.!
-        System.out.println("리다이렉 이후 request의 attribute: "+req.getAttribute("test"));
+        System.out.println("리다이렉 이후 request의 attribute: "+req.getAttribute("test"));   //참고 null
         //설명. 파라미터가 넘어오면 request 객체가 달라져도 값이 전달되어 온다.
         System.out.println("리다이렉 이후 request의 parameter: "+req.getParameter("test"));    //참고. 파라미터로 받는것만 데이터 담김!!
     }
