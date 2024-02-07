@@ -5,6 +5,18 @@
     <meta charset="UTF-8">
     <title>d</title>
 </head>
+
+<!--
+    서블릿 배울 때 요청은 크게 get과 post로 나뉨
+    1. GET: 조회를 할 때 요청하는 형식으로 URL 경로에 노출된는 방식으로 서버에 값을 넘기며 조회된다.(쿼리스트링, PATHVARIABLE)
+    2 POST: 조회를 제외한 나머지 (DML) 진행 시 사용. 경우에 따라 조회할 때 URL 경로를 노출시키지 않고 서버에 값을 넘기거나
+            조회를 위해 서버로 넘기는 값의 크기가 클 때(255byte 초과 ) POST 요청 진행
+
+    Rest API 방식으로 요청 시 더 세분화 된 Http Method(7가지) 사용하게 되겠지만 현재는 이 두가지 방식에 집중
+-->
+
+
+
 <body>
     <h1 align="center">Service method</h1>
     <h3>Get 방식 요청</h3>
