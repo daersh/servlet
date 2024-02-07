@@ -29,7 +29,5 @@ public class RedirectServlet extends HttpServlet {
         System.out.println("리다이렉 이후 request의 attribute: "+req.getAttribute("test"));
         //설명. 파라미터가 넘어오면 request 객체가 달라져도 값이 전달되어 온다.
         System.out.println("리다이렉 이후 request의 parameter: "+req.getParameter("test"));    //참고. 파라미터로 받는것만 데이터 담김!!
-
-
     }
 }
