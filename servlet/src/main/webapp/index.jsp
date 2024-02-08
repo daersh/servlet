@@ -19,5 +19,7 @@
 <a href="chapter9">chapter 9</a><br>
 <a href="./chap10.jsp">chapter 10</a><br>
 <a href="./chap11.jsp">chapter 11</a><br>
+<a href="./chap12.jsp">chapter 12</a><br>
+<a href="./chap11.jsp">chapter 13</a><br>
 </body>
 </html>

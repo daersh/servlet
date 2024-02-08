@@ -18,7 +18,9 @@ public class PasswordEncryptfilter implements Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         System.out.println("password filter 호출");
-        /*설명. 기존 요청 객체에서 우리가 재정의한 요청 객체로 교체*/
+        /*설명. 기존 요청 객체에서 우리가 재정의한 요청 객체로 교체
+            * plainText to EcryptText
+        * */
         RequestWrapper wrapper = new RequestWrapper((HttpServletRequest)servletRequest);
         String password =  wrapper.getParameter("password");
         System.out.println("password = " + password);
@@ -26,7 +28,6 @@ public class PasswordEncryptfilter implements Filter {
         filterChain.doFilter(wrapper,servletResponse);
 
     }
-
     @Override
     public void destroy() {
         Filter.super.destroy();
