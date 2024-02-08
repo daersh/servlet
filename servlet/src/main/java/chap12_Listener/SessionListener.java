@@ -5,11 +5,12 @@ import jakarta.servlet.annotation.WebListener;
 import jakarta.servlet.http.*;
 
 @WebListener
-public class SessionListener implements HttpSessionListener, HttpSessionAttributeListener {
+public class SessionListener implements HttpSessionListener, HttpSessionAttributeListener/*, HttpSessionBindingListener*/ {
+    /*설명. 세션은 주로 객체를 담기 위해 사용한다.!!*/
     public SessionListener() {
         System.out.println("session listener !");
     }
-
+    /*목차 1. HttpSessionListener*/
     @Override
     public void attributeAdded(HttpSessionBindingEvent event) {
         System.out.println("session attribute added!");
@@ -25,7 +26,7 @@ public class SessionListener implements HttpSessionListener, HttpSessionAttribut
     public void attributeReplaced(HttpSessionBindingEvent event) {
         System.out.println("session attribute replaced!");
     }
-
+    /*목차 2. HttpSessionAttributeListener*/
     @Override
     public void sessionCreated(HttpSessionEvent se) {
         System.out.println("session listener 인스턴스 생성");
@@ -37,4 +38,15 @@ public class SessionListener implements HttpSessionListener, HttpSessionAttribut
         System.out.println("session listener 인스턴스 제거");
     }
 
+    /*목차 3.HttpSessionBindingListener*/
+    // 해당 인터페이스(바인딩 인터페이스)는 SessionListen 가 아닌 세션에 담기는 타입의 클래스에 각각 정의해야 한다. (DTD 같은 곳에)
+    /*@Override
+    public void valueBound(HttpSessionBindingEvent event) {
+        System.out.println("bound");
+    }
+
+    @Override
+    public void valueUnbound(HttpSessionBindingEvent event) {
+        System.out.println("unbound");
+    }*/
 }
