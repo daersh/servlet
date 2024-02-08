@@ -7,7 +7,6 @@
         <servlet-name>xmlmapping</servlet-name>
         <servlet-class>chap1.XmlLifeCycleTestServlet</servlet-class>
     </servlet>
-
     <servlet-mapping>
         <servlet-name>xmlmapping</servlet-name>
         <url-pattern>/xml-lifecycle</url-pattern>
